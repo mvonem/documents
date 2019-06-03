@@ -6,7 +6,7 @@
 
 ### 1. Sign-up
 Use either a Google or Facebook account.  
-If you do not have a [Google](http://gmail.com) or [facebook](http://gmail.com) use these links to get a free one.
+If you do not have a [Google](https://support.google.com/mail/answer/56256?hl=en) or [facebook](http://gmail.com) use these links to get a free one.
 
 After you sign in you will be asked the following:
 #### Create you ONEm name
