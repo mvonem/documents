@@ -1,0 +1,11 @@
+site_name: ONEm API
+nav:
+    - Home: index.md
+    - Tutorials:
+          - Getting Started: started/getting-started.md
+    - Menus and Forms: menus-and-forms.md
+    - Text Audio and Video: text-audio-video.md
+    - Blockchain: blockchain.md
+    - Add-ons: add-ons.md
+theme:
+  name: 'material'
