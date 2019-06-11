@@ -6,6 +6,8 @@ nav:
     - Getting Started:
         - NodeJS: getting-started/getting-started-nodejs.md
         - Python: getting-started/getting-started-python.md
+    - SDK:
+        - NodeJS: SDK/NodeJS.md
 theme:
     name: material
     # custom_dir: theme/material/
