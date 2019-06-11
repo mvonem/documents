@@ -1,0 +1,15 @@
+header.md-header {
+	color:  #3b5998;
+}
+
+.md-header-nav__button.md-logo {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    margin-top: -20px;
+}
+
+.md-header-nav__button.md-logo img {
+    height:80px !important;
+    width:80px !important;
+}

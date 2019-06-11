@@ -2,7 +2,7 @@
 
 For full documentation visit [mkdocs.org](https://mkdocs.org).
 
-Inline <img src="assets/nodejs-new-pantone-black.png" width=50> With Reference Link
+Inline <img src="/assets/nodejs-new-pantone-black.png" width=50> With Reference Link
 
 ## Commands
 

@@ -1,11 +1,25 @@
 site_name: ONEm API
 nav:
     - Home: index.md
-    - Tutorials:
-          - Getting Started: started/getting-started.md
-    - Menus and Forms: menus-and-forms.md
-    - Text Audio and Video: text-audio-video.md
-    - Blockchain: blockchain.md
-    - Add-ons: add-ons.md
+    - Developer Portal: http://testtool.dhq.onem:6060/
+    - Getting Started:
+        - NodeJS: getting-started/getting-started-nodejs.md
+        - Python: getting-started/getting-started-python.md
 theme:
-  name: 'material'
+    name: material
+    custom_dir: theme/material/
+    favicon: assets/favicon.ico
+    language: en
+
+    palette:
+        primary: white
+        accent: blue
+    # feature:
+    #     tabs: true
+    logo: assets/onem-logo.svg
+extra_css:
+  - 'stylesheets/styles.css'
+
+
+
+

@@ -1,8 +1,9 @@
-## What you need to do to create a ONEm micro-app
+## Getting Started on ONEm
+Step-by-step guides for deploying your first app and mastering the basics of ONEm
 
-1. [Sign up using Google or Facebook](#sign-up)
-2. Get a free API Key
-3. Create your fist app
+Follow the guide for your favourite language:
+
+* Getting started with NodeJS
 
 ### 1. Sign-up
 Use either a Google or Facebook account.  
