@@ -1,19 +1,11 @@
-# Welcome to ONEm
+# Learn about building, deploying, and managing your apps with ONEm
 
-For full documentation visit [mkdocs.org](https://mkdocs.org).
+## Choose your favourite language
 
-Inline <img src="assets/nodejs-new-pantone-black.png" width=50> With Reference Link
+[<img src="assets/nodejs-new-pantone-black.png" width=100>](getting-started/getting-started-nodejs.md)
+[<img src="assets/python-logo.png" width=150>](getting-started/getting-started-python.md)
 
-## Commands
+* [Getting started Node.js](getting-started/getting-started-nodejs.md)
+* [Getting started python](getting-started/getting-started-python.md)
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+New to ONEm? [Sign-up](http://testtool.dhq.onem:6060/) for a free developer account

@@ -84,7 +84,7 @@ $ npm install
 
 The **Hello World** example application by default listens on the HTTP port defined by the environment varible `PORT` or 8080 by default.
 
-Make a note of the IP address or fully qualified URL of your application from your provider together with the port.  For example with heroku, it might be something like: https://example.herokuapp.com:8080 or with DigitalOcean it might be http://63.x.y.z:8080
+Make a note of the IP address or fully qualified URL of your application from your provider together with the port.  For example with heroku, it might be something like: `https://example.herokuapp.com:8080` or with DigitalOcean it might be `http://63.x.y.z:8080`
 
 ## Run the app
 
