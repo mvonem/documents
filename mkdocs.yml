@@ -4,10 +4,10 @@ nav:
     - Developer Portal: http://testtool.dhq.onem:6060/
     - API Reference: http://172.16.38.113:6212/redoc
     - Getting Started:
-        - NodeJS: getting-started/getting-started-nodejs.md
+        - Node.js: getting-started/getting-started-nodejs.md
         - Python: getting-started/getting-started-python.md
     - SDK:
-        - NodeJS: SDK/NodeJS.md
+        - Node.js: SDK/NodeJS.md
 theme:
     name: material
     # custom_dir: theme/material/
