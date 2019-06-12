@@ -4,7 +4,7 @@
 ## Introduction
 This tutorial will have you deploying a Node.js app to ONEm in minutes.
 
-The tutorial assumes that you have a free [ONEm account](http://testtool.dhq.onem:6060/), and that you have the following prerequisites installed locally:
+The tutorial assumes that you have a free [ONEm account]({{links.portal}}), and that you have the following prerequisites installed locally:
 
 * [Node.js](https://nodejs.org/)
 * npm which is installed with Node.js
@@ -102,7 +102,7 @@ Make a note of your *Callback URL*, you will need it in the next step.
 
 ## Register the app with ONEm Sandbox Portal
 
-If you have not already done so, sign-up for a free ONEm developer account on the sandbox [here](http://testtool.dhq.onem:6060/).
+If you have not already done so, sign-up for a free ONEm developer account on the sandbox [here]({{links.portal}}).
 
 Register your app on the ONEm Sandbox Portal.  You will need to provide:
 

@@ -19,6 +19,13 @@ theme:
     # feature:
     #     tabs: true
     logo: assets/onem-logo.svg
+plugins:
+    - search
+    - markdownextradata #https://github.com/rosscdh/mkdocs-markdownextradata-plugin
+extra:
+  links:
+    portal: https://developer-portal-poc.onem.zone/
+    api: https://developer-api-poc.onem.zone/docs
 extra_css:
   - 'stylesheets/styles.css'
 
