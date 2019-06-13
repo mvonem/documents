@@ -20,7 +20,7 @@ The documents are written in Markdown using Mkdocs.
 
 See the `mkdocs.yml` in the project's root directory and the [mkdocs documentation](https://www.mkdocs.org).
 
-The documents contain template data such as external links to the API Reference and Developer Portal.  Since these links vary between production, staging and POC, they can be controlled via the yml configuration file using the `extra:` parameter:
+The documents contain template data such as external links to the API Reference and Developer Portal.  Since these links vary between production, staging and POC, they can be controlled via the `mkdocs.yml` configuration file using the `extra:` parameter:
 
 ```
 extra:
@@ -33,6 +33,14 @@ extra:
 
 ```
 $ mkdocs serve
+```
+
+## Running via npm
+
+Uses node [serve-static](https://www.npmjs.com/package/serve-static)
+
+```
+$ npm run start
 ```
 
 ## Building
