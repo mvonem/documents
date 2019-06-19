@@ -8,4 +8,4 @@
 * [Getting started Node.js](getting-started/getting-started-nodejs.md)
 * [Getting started python](getting-started/getting-started-python.md)
 
-New to ONEm? [Sign-up](http://testtool.dhq.onem:6060/) for a free developer account
+New to ONEm? [Sign-up]({{links.portal}}) for a free developer account

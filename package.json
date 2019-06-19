@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/ONEmCommunications/documents#readme",
   "devDependencies": {
+    "eslint": "^5.16.0",
     "static-server": "^2.2.1"
   }
 }

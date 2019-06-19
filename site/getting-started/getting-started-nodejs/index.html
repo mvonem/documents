@@ -63,7 +63,7 @@
     <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
     
     
-      <link rel="stylesheet" href="../../stylesheets/styles.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/styles.css">
     
     
       
@@ -200,30 +200,18 @@
       
       
 
-
-  <li class="md-nav__item">
-    <a href="http://172.16.38.113:6212/redoc" title="API Reference" class="md-nav__link">
-      API Reference
-    </a>
-  </li>
-
-    
-      
-      
-      
-
   
 
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
-    <label class="md-nav__link" for="nav-4">
+    <label class="md-nav__link" for="nav-3">
       Getting Started
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
+      <label class="md-nav__title" for="nav-3">
         Getting Started
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -386,13 +374,121 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Introduction
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Introduction
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../intro/" title="What are ONEm apps?" class="md-nav__link">
+      What are ONEm apps?
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../concepts/" title="Core concepts" class="md-nav__link">
+      Core concepts
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../buildfirstapp/" title="Build your first app" class="md-nav__link">
+      Build your first app
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
     <label class="md-nav__link" for="nav-5">
-      SDK
+      Building
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-5">
+        Building
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../building/webhooks/" title="Webhooks" class="md-nav__link">
+      Webhooks
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="http://172.16.38.113:6212/redoc" title="API Reference" class="md-nav__link">
+      API Reference
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      SDK
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
         SDK
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -553,6 +649,7 @@
 <li>npm which is installed with Node.js</li>
 <li><a href="https://github.com/">git</a></li>
 <li><a href="https://ngrok.com/download">ngrok</a></li>
+<li>A code editor :) We are fans of <a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
 </ul>
 <h2 id="set-up-on-localhost">Set up on localhost</h2>
 <p>To start with, we will be running all commands locally on your own PC.  Your app will initially be hosted there for local development, then later you will learn how to host your app with a hosting provider for use on production.</p>
@@ -610,16 +707,16 @@ ngrok version 2.3.29
 </code></pre>
 
 <p>Navigate to the forwarding link on your browser and you should see a <em>Hello World</em> greeting.</p>
-<p>The <em>Hello World</em> example application will wait for HTTP callback requests as users send SMS messages.  The sample app expects to receive callbacks on the base path: <code>/api</code>.  The ONEm servers need to know the fully qualified URL for your app, including the base path.  In our example above, the <em>Callback URL</em> would be <code>http://6e3f3fce.ngrok.io/api</code></p>
-<p>Make a note of your <em>Callback URL</em>, you will need it in the next step.</p>
+<p>The <em>Hello World</em> example app expects to receive HTTP requests as users perform certain actions.  We call this the <em>user_action</em> <a href="../../building/webhooks/">webhook</a>. The app expects to receive user action notifications on the base path: <code>/api</code>.  The ONEm platform will need to be configured with the fully qualified URL of this endpoint, including the base path.  In our example above, the <em>user_action</em> webhook URL would be <code>http://6e3f3fce.ngrok.io/api</code></p>
+<p>Make a note of your <em>user_action</em> URL, you will need it in the next step.</p>
 <h2 id="register-the-app-with-onem-sandbox-portal">Register the app with ONEm Sandbox Portal</h2>
-<p>If you have not already done so, sign-up for a free ONEm developer account on the sandbox <a href="https://developer-portal-poc.onem.zone/">here</a>.</p>
+<p>If you have not already done so, sign-up for a <a href="https://developer-portal-poc.onem.zone/">free ONEm developer account</a> on the sandbox.</p>
 <p>Register your app on the ONEm Sandbox Portal.  You will need to provide:</p>
 <ol>
 <li>A unique one-word name for your app, e.g <em>hello</em></li>
 <li>A description of your app</li>
 <li>A link to your website</li>
-<li>The <em>Callback URL</em> you obtained from the previous step</li>
+<li>The <em>user_action</em> URL you obtained from the previous step</li>
 </ol>
 <p>Don't worry about the other app details at this stage (verbs, permissions), we will use them later in the advanced tutorials.</p>
 <p>Make sure the details are saved correctly in the portal.</p>
@@ -658,7 +755,7 @@ $ git push heroku master
 
 <p>Make a note of the IP address or fully qualified URL of your application from your provider together with the port.  For example with heroku, it might be something like: <code>https://example.herokuapp.com:8080</code> or with DigitalOcean it might be <code>http://63.x.y.z:8080</code></p>
 <h3 id="register-the-app-with-onem-production-portal">Register the app with ONEm Production Portal</h3>
-<p>In the <em>Callback URL</em> field, provide the fully qualified URL of your application's base API path.</p>
+<p>In the <em>user_action</em> URL field, provide the fully qualified URL of your application's base API path.</p>
 <h3 id="verifying-on-production">Verifying on production</h3>
 <p>Head over to our production verification site <a href="https://onem.zone">onem.zone</a> and verify that your app is responding as expected.</p>
                 
@@ -733,6 +830,8 @@ $ git push heroku master
       <script src="../../assets/javascripts/application.2ba8dec4.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+        <script src="../../assets/js/opensidenav.js"></script>
       
     
   </body>

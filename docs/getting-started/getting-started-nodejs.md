@@ -10,6 +10,7 @@ The tutorial assumes that you have a free [ONEm account]({{links.portal}}), and 
 * npm which is installed with Node.js
 * [git](https://github.com/)
 * [ngrok](https://ngrok.com/download)
+* A code editor :) We are fans of [Visual Studio Code](https://code.visualstudio.com/)
 
 ## Set up on localhost
 
@@ -96,20 +97,20 @@ Forwarding                    http://6e3f3fce.ngrok.io -> http://localhost:8080
 
 Navigate to the forwarding link on your browser and you should see a *Hello World* greeting.
 
-The *Hello World* example application will wait for HTTP callback requests as users send SMS messages.  The sample app expects to receive callbacks on the base path: `/api`.  The ONEm servers need to know the fully qualified URL for your app, including the base path.  In our example above, the *Callback URL* would be `http://6e3f3fce.ngrok.io/api`
+The *Hello World* example app expects to receive HTTP requests as users perform certain actions.  We call this the *user_action* [webhook](../building/webhooks.md). The app expects to receive user action notifications on the base path: `/api`.  The ONEm platform will need to be configured with the fully qualified URL of this endpoint, including the base path.  In our example above, the *user_action* webhook URL would be `http://6e3f3fce.ngrok.io/api`
 
-Make a note of your *Callback URL*, you will need it in the next step.
+Make a note of your *user_action* URL, you will need it in the next step.
 
 ## Register the app with ONEm Sandbox Portal
 
-If you have not already done so, sign-up for a free ONEm developer account on the sandbox [here]({{links.portal}}).
+If you have not already done so, sign-up for a [free ONEm developer account]({{links.portal}}) on the sandbox.
 
 Register your app on the ONEm Sandbox Portal.  You will need to provide:
 
 1. A unique one-word name for your app, e.g *hello*
 2. A description of your app
 3. A link to your website
-4. The *Callback URL* you obtained from the previous step
+4. The *user_action* URL you obtained from the previous step
 
 Don't worry about the other app details at this stage (verbs, permissions), we will use them later in the advanced tutorials.
 
@@ -165,7 +166,7 @@ Make a note of the IP address or fully qualified URL of your application from yo
 
 ### Register the app with ONEm Production Portal
 
-In the *Callback URL* field, provide the fully qualified URL of your application's base API path.
+In the *user_action* URL field, provide the fully qualified URL of your application's base API path.
 
 ### Verifying on production
 

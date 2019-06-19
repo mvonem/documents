@@ -2,10 +2,20 @@ site_name: Documentation
 nav:
     - Home: index.md
     - Developer Portal: http://testtool.dhq.onem:6060/
-    - API Reference: http://172.16.38.113:6212/redoc
     - Getting Started:
         - Node.js: getting-started/getting-started-nodejs.md
         - Python: getting-started/getting-started-python.md
+    - Introduction:
+        - What are ONEm apps?: intro.md
+        - Core concepts: concepts.md
+        - Build your first app: buildfirstapp.md
+    - Building:
+        - Webhooks: building/webhooks.md
+        # - Menus: menus.md
+        # - Forms: forms.md
+        # - Verbs: verbs.md
+        # - Using the API: usingapi.md
+    - API Reference: http://172.16.38.113:6212/redoc
     - SDK:
         - Node.js: SDK/NodeJS.md
 theme:
@@ -27,7 +37,9 @@ extra:
     portal: https://developer-portal-poc.onem.zone/
     api: https://developer-api-poc.onem.zone/docs
 extra_css:
-  - 'stylesheets/styles.css'
+    - 'assets/stylesheets/styles.css'
+extra_javascript:
+    - 'assets/js/opensidenav.js'
 
 
 
