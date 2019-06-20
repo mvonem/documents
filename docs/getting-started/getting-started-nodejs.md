@@ -65,8 +65,17 @@ $ npm install
 
 The *Hello World* example application listens on the HTTP port defined by the environment variable `PORT` or 8080 by default.  You can change the port by creating a `.env` file in your app's root directory and specifying the desired port value:
 
+### Port
 ```
 PORT=8080
+```
+
+### Token secret
+
+Webhooks triggered by the ONEm platform contain a JWT token in the authorzation header.  The JWT token carries the unique identity of the ONEm user so that your app can differentiate requests from different users.  In order to verify jwt tokens that are sent by the ONEm platform, the token secret should be configured.  For the sandbox, this secret is `87654321`.  Configure the secret in the `.env` file:
+
+```
+TOKEN_SECRET=87654321
 ```
 
 ## Run the app
@@ -119,7 +128,7 @@ Make sure the details are saved correctly in the portal.
 
 ## Test the app
 
-Head over to our [sandbox test tool](https://poc.onem.com), we call it *ONEm Zone*.  Sign-up and then in the input field, enter `#` followed by your app's name, for example `#HELLO` if your app is called *hello*.
+Head over to our [sandbox test tool](https://poc.onem.zone), we call it *ONEm Zone*.  Sign-up and then in the input field, enter `#` followed by your app's name, for example `#HELLO` if your app is called *hello*.
 
 The ONEm system should respond with a menu, similar to the below:
 

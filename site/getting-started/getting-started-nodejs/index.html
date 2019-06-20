@@ -275,6 +275,26 @@
     Configure the app
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#port" title="Port" class="md-nav__link">
+    Port
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#token-secret" title="Token secret" class="md-nav__link">
+    Token secret
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -557,6 +577,26 @@
     Configure the app
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#port" title="Port" class="md-nav__link">
+    Port
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#token-secret" title="Token secret" class="md-nav__link">
+    Token secret
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -686,7 +726,13 @@ ngrok version 2.3.29
 
 <h2 id="configure-the-app">Configure the app</h2>
 <p>The <em>Hello World</em> example application listens on the HTTP port defined by the environment variable <code>PORT</code> or 8080 by default.  You can change the port by creating a <code>.env</code> file in your app's root directory and specifying the desired port value:</p>
+<h3 id="port">Port</h3>
 <pre><code>PORT=8080
+</code></pre>
+
+<h3 id="token-secret">Token secret</h3>
+<p>Webhooks triggered by the ONEm platform contain a JWT token in the authorzation header.  The JWT token carries the unique identity of the ONEm user so that your app can differentiate requests from different users.  In order to verify jwt tokens that are sent by the ONEm platform, the token secret should be configured.  For the sandbox, this secret is <code>87654321</code>.  Configure the secret in the <code>.env</code> file:</p>
+<pre><code>TOKEN_SECRET=87654321
 </code></pre>
 
 <h2 id="run-the-app">Run the app</h2>
@@ -721,7 +767,7 @@ ngrok version 2.3.29
 <p>Don't worry about the other app details at this stage (verbs, permissions), we will use them later in the advanced tutorials.</p>
 <p>Make sure the details are saved correctly in the portal.</p>
 <h2 id="test-the-app">Test the app</h2>
-<p>Head over to our <a href="https://poc.onem.com">sandbox test tool</a>, we call it <em>ONEm Zone</em>.  Sign-up and then in the input field, enter <code>#</code> followed by your app's name, for example <code>#HELLO</code> if your app is called <em>hello</em>.</p>
+<p>Head over to our <a href="https://poc.onem.zone">sandbox test tool</a>, we call it <em>ONEm Zone</em>.  Sign-up and then in the input field, enter <code>#</code> followed by your app's name, for example <code>#HELLO</code> if your app is called <em>hello</em>.</p>
 <p>The ONEm system should respond with a menu, similar to the below:</p>
 <pre><code>#HELLO WORLD
 A First option
