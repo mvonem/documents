@@ -4,13 +4,15 @@
 ## Introduction
 This tutorial will have you deploying a Node.js app to ONEm in minutes.
 
-The tutorial assumes that you have a free [ONEm account]({{links.portal}}), and that you have the following prerequisites installed locally:
+In this tutorial items marked in <mark>yellow</mark> are essential and should be noted for completing certain processes.
 
-* [Node.js](https://nodejs.org/)
+The tutorial assumes that you have a free or paid [ONEm account]({{links.portal}}), and that you have the following prerequisites installed locally:
+
+* <a href="https://nodejs.org/" target="_blank">Node.js</a>
 * npm which is installed with Node.js
-* [git](https://github.com/)
-* [ngrok](https://ngrok.com/download)
-* A code editor :) We are fans of [Visual Studio Code](https://code.visualstudio.com/)
+* <a href="https://github.com/" target="_blank">git</a>
+* <a href="https://ngrok.com/download" target="_blank">ngrok</a>
+* <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>
 
 ## Set up on localhost
 
@@ -108,11 +110,11 @@ Navigate to the forwarding link on your browser and you should see a *Hello Worl
 
 The *Hello World* example app expects to receive HTTP requests as users perform certain actions.  We call this the *user_action* [webhook](../building/webhooks.md). The app expects to receive user action notifications on the base path: `/api`.  The ONEm platform will need to be configured with the fully qualified URL of this endpoint, including the base path.  In our example above, the *user_action* webhook URL would be `http://6e3f3fce.ngrok.io/api`
 
-Make a note of your *user_action* URL, you will need it in the next step.
+<mark>Make a note of your *user_action* URL, you will need it in the next step.</mark>
 
 ## Register the app with ONEm Sandbox Portal
 
-If you have not already done so, sign-up for a [free ONEm developer account]({{links.portal}}) on the sandbox.
+If you have not already done so, sign-up for a <a href="{{links.portal}}" target="_blank">free ONEm developer account</a> on the sandbox.
 
 Register your app on the ONEm Sandbox Portal.  You will need to provide:
 
@@ -128,9 +130,9 @@ Make sure the details are saved correctly in the portal.
 
 ## Test the app
 
-Head over to our [sandbox test tool](https://poc.onem.zone), we call it *ONEm Zone*.  Sign-up and then in the input field, enter `#` followed by your app's name, for example `#HELLO` if your app is called *hello*.
+Head over to our <a href="https://poc.onem.zone" target="_blank">sandbox test tool</a>, we call it *ONEm Zone*.  Sign-up and then in the input field, enter `#` followed by your app's name, for example `#HELLO` if your app is called *hello*.
 
-The ONEm system should respond with a menu, similar to the below:
+If you have completed everything correctly, the ONEm system should respond with a menu, similar to the below:
 
 ```
 #HELLO WORLD
@@ -140,27 +142,29 @@ C Third option
 --Reply A-C
 ```
 
-Congratulations, you have successfully installed your first app.  Give yourself a pat on the back and then head over to the advanced tutorials to get to know ONEm better.
+If you see the above, congratulations, you have successfully installed your first app.  Give yourself a pat on the back and then head over to the advanced tutorials to get to know ONEm better.
+
+If you don't see the above done worry, go back and check that each step has been followed properly and your program will soon be up and running.
 
 ## Running your app in production
 
 ### Choose a hosting platform
 
-Your app will need to be hosted on the internet so that ONEm's servers can access it.  Choose a hosting provider.  
+Your app will need to be hosted on the internet so that ONEm's platform can access it.  Choose a hosting provider.  
 
 Hosting provider requirements:
 
-* Public static IP or a permanent DNS host name
-* Optional - access to local or cloud database services such as [PostgreSQL](https://www.postgresql.org/) or [MongoDB](https://www.mongodb.com/)
+* <mark>Public static IP or a permanent DNS host name</mark>
+* Optional - access to local or cloud database services such as <a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a>or <a href="https://www.mongodb.com/" target="_blank">MongoDB</a>
 
 In general, ONEm apps can be hosted on any platform, it's entirely up to you which provider you use.
 
 Some popular providers you might consider:
 
-* [Heroku](https://www.heroku.com/)
-* [DigitalOcean](www.digitalocean.com/)
-* [Amazon Web Services (AWS)](https://aws.amazon.com/websites/)
-* [Microsoft Azure](azure.microsoft.com/Account/Free‎)
+* <a href="https://www.heroku.com/" target="_blank">Heroku</a>
+* <a href="www.digitalocean.com/" target="_blank">DigitalOcean</a>
+* <a href="https://aws.amazon.com/websites/" target="_blank">Amazon Web Services (AWS)</a>
+* <a href="azure.microsoft.com/Account/Free‎" target="_blank">Microsoft Azure</a>
 
 ### Install and deploy your app on production
 
@@ -171,12 +175,14 @@ $ heroku create
 $ git push heroku master
 ```
 
-Make a note of the IP address or fully qualified URL of your application from your provider together with the port.  For example with heroku, it might be something like: `https://example.herokuapp.com:8080` or with DigitalOcean it might be `http://63.x.y.z:8080`
+<mark>Make a note of the IP address or fully qualified URL of your application from your provider together with the port.</mark>  For example with heroku, it might be something like: `https://example.herokuapp.com:8080` or with DigitalOcean it might be `http://63.x.y.z:8080`
 
 ### Register the app with ONEm Production Portal
 
-In the *user_action* URL field, provide the fully qualified URL of your application's base API path.
+You will need to edit your *App details* and update the *user_action* URL field, provide the fully qualified URL of your application's base API path. You can access your account <a href="{{links.portal}}" target="_blank">here</a>.
+
+<mark>Remember to add the `/api` to your url so the ONEm platform can reach to your service.</mark>
 
 ### Verifying on production
 
-Head over to our production verification site [onem.zone](https://onem.zone) and verify that your app is responding as expected.
+Head over to our production verification site <a href="https://onem.zone" target="_blank">onem.zone</a> and verify that your app is responding as expected.  If you haven't already signed up you will need to have <mark>a mobile</mark> ands register using a google or facebook account.
