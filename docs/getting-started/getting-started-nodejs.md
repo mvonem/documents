@@ -8,11 +8,11 @@ In this tutorial items marked in <mark>yellow</mark> are essential and should be
 
 The tutorial assumes that you have a free or paid [ONEm account]({{links.portal}}), and that you have the following prerequisites installed locally:
 
-* <a href="https://nodejs.org/" target="_blank">Node.js</a>
+* <a href="https://nodejs.org/" target="_blank" rel="noopener noreferrer">Node.js</a>
 * npm which is installed with Node.js
-* <a href="https://github.com/" target="_blank">git</a>
-* <a href="https://ngrok.com/download" target="_blank">ngrok</a>
-* <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>
+* <a href="https://github.com/" target="_blank" rel="noopener noreferrer">git</a>
+* <a href="https://ngrok.com/download" target="_blank" rel="noopener noreferrer">ngrok</a>
+* <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">Visual Studio Code</a>
 
 ## Set up on localhost
 
@@ -114,7 +114,7 @@ The *Hello World* example app expects to receive HTTP requests as users perform 
 
 ## Register the app with ONEm Sandbox Portal
 
-If you have not already done so, sign-up for a <a href="{{links.portal}}" target="_blank">free ONEm developer account</a> on the sandbox.
+If you have not already done so, sign-up for a <a href="{{links.portal}}" target="_blank" rel="noopener noreferrer">free ONEm developer account</a> on the sandbox.
 
 Register your app on the ONEm Sandbox Portal.  You will need to provide:
 
@@ -130,7 +130,7 @@ Make sure the details are saved correctly in the portal.
 
 ## Test the app
 
-Head over to our <a href="https://poc.onem.zone" target="_blank">sandbox test tool</a>, we call it *ONEm Zone*.  Sign-up and then in the input field, enter `#` followed by your app's name, for example `#HELLO` if your app is called *hello*.
+Head over to our <a href="https://poc.onem.zone" target="_blank" rel="noopener noreferrer">sandbox test tool</a>, we call it *ONEm Zone*.  Sign-up and then in the input field, enter `#` followed by your app's name, for example `#HELLO` if your app is called *hello*.
 
 If you have completed everything correctly, the ONEm system should respond with a menu, similar to the below:
 
@@ -155,16 +155,16 @@ Your app will need to be hosted on the internet so that ONEm's platform can acce
 Hosting provider requirements:
 
 * <mark>Public static IP or a permanent DNS host name</mark>
-* Optional - access to local or cloud database services such as <a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a>or <a href="https://www.mongodb.com/" target="_blank">MongoDB</a>
+* Optional - access to local or cloud database services such as <a href="https://www.postgresql.org/" target="_blank" rel="noopener noreferrer">PostgreSQL</a>or <a href="https://www.mongodb.com/" target="_blank" rel="noopener noreferrer">MongoDB</a>
 
 In general, ONEm apps can be hosted on any platform, it's entirely up to you which provider you use.
 
 Some popular providers you might consider:
 
-* <a href="https://www.heroku.com/" target="_blank">Heroku</a>
-* <a href="www.digitalocean.com/" target="_blank">DigitalOcean</a>
-* <a href="https://aws.amazon.com/websites/" target="_blank">Amazon Web Services (AWS)</a>
-* <a href="azure.microsoft.com/Account/Free‎" target="_blank">Microsoft Azure</a>
+* <a href="https://www.heroku.com/" target="_blank" rel="noopener noreferrer">Heroku</a>
+* <a href="www.digitalocean.com/" target="_blank" rel="noopener noreferrer">DigitalOcean</a>
+* <a href="https://aws.amazon.com/websites/" target="_blank" rel="noopener noreferrer">Amazon Web Services (AWS)</a>
+* <a href="azure.microsoft.com/Account/Free‎" target="_blank" rel="noopener noreferrer">Microsoft Azure</a>
 
 ### Install and deploy your app on production
 
@@ -179,9 +179,9 @@ $ git push heroku master
 
 ### Register the app with ONEm Production Portal
 
-You will need to edit your *App details* and update the *user_action* URL field, provide the fully qualified URL of your application's base API path. You can access your account <a href="{{links.portal}}" target="_blank">here</a>.
+You will need to edit your *App details* and update the *user_action* URL field, provide the fully qualified URL of your application's base API path. You can access your account <a href="{{links.portal}}" target="_blank" rel="noopener noreferrer">here</a>.
 
-<mark>Remember to add the `/api` to your url so the ONEm platform can reach to your service.</mark>
+<mark>Remember to add `/api` to your url so the ONEm platform can reach to your app.</mark>
 
 ### Verifying on production
 

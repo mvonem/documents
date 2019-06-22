@@ -20,6 +20,11 @@ nav:
         - Node.js: SDK/NodeJS.md
 theme:
     name: material
+    highlightjs: true
+    hljs_languages:
+        - javascript
+        - python
+        - html
     # custom_dir: theme/material/
     favicon: assets/favicon.ico
     language: en
