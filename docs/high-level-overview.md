@@ -1,4 +1,4 @@
-You will need to create an app on the developer portal and make it return standardized JSON responses upon ONEm requests, that is [user actions](/building/webhooks/). These requests are launched by the ONEm platform on behalf of your users.
+You will need to register your app on the developer portal and make it return standardized JSON responses upon ONEm requests. These requests are launched by the ONEm platform on behalf of your users.
 
 ## Developer Account
 
