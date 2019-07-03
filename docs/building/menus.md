@@ -11,7 +11,7 @@ Your server must return a JSON response with a structure similar to the one belo
 ```
 {'body': [{'description': 'New todo',
            'method': 'GET',
-           'nextRoute': '/task/create/',
+           'path': '/task/create/',
            'type': 'option'},
           {'description': 'Done(0)',
            'method': 'GET',
@@ -41,7 +41,7 @@ The response back to the user will be an SMS which will look like:
 A New todo
 B Done(0)
 Todo(1)
-C buy coffe 2019-07-01
+C buy coffee 2019-07-01
 --Reply A-C
 ```
 
