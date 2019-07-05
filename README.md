@@ -11,10 +11,9 @@ The documents are written in Markdown using Mkdocs.
 
 ## Installation
 
-1. Clone and cd into this repo
-2. Install Python and [Mkdocs](https://www.mkdocs.org/#installation)
-3. Install mkdocs material theme from [here](https://squidfunk.github.io/mkdocs-material/)
-4. Install the markdownextradata plug-in from [here](https://github.com/rosscdh/mkdocs-markdownextradata-plugin)
+1. Create a virtual environment and activate it.
+2. Clone and cd into this repo
+3. `pip install -r requirements.txt`
 
 ## Configuration
 
