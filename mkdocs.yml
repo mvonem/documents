@@ -20,6 +20,40 @@ nav:
         - Node.js: SDK/NodeJS.md
     - API Reference: http://172.16.38.113:6212/redoc
     - Developer Portal: http://testtool.dhq.onem:6060/
+
+#Home
+# Introduction should let user know about:
+# - What is ONEm Platform? - describe the concept, mission and vision for ONEm, how platform services work
+# - What are ONEm apps? - plus value added by own services
+# - Core concepts - what you’ll need to create your own application: dev account, sdk overview, framework overview, API
+#
+# Gettings started:
+# Pre-requisites for developing a service and getting started with ONEm
+# - Py guidelines for setup: how to links, web servers how to links
+# - Node.js guidelines for setup
+#
+# Building
+# - How to register an app
+# - How to structure a service
+#     - menu
+#     - form
+#     - headers and footers
+# - SDK and what does it do
+#     - talking about HTML tags we accept
+#     - talking about templates
+# - Framework and what does it handles
+#     - all about json schema to send to the framework: menus, forms, raw
+#
+# API
+# - purpose
+# - documentation
+#
+# Limitations and resource usage
+# - public and private applications
+# - application name
+# - top up for messages
+
+
 theme:
     name: material
     highlightjs: true
@@ -47,7 +81,3 @@ extra_css:
     - 'assets/stylesheets/styles.css'
 extra_javascript:
     - 'assets/js/opensidenav.js'
-
-
-
-
