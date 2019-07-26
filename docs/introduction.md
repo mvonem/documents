@@ -47,10 +47,10 @@ D Services
 E How to use
 --Reply A-E
 ```
-The above message is the landing page of #onem application. The first message presents user with the main options that can be accessed and offers a navigation possibility.
+The above message is the landing page of #onem application, also considered the main menu. The first message presents user with the main options that can be accessed and offers a navigation possibility.
 As you probably figured out, the user can access account information, chat with friends, see available services or follow a tutorial on how to use ONEm features. Each available option has a letter attached to it to facilitate user response. As hinted in the footer, the user can sent one of the letters to access the corresponding section. This is the **OPTIONS** concept. Each option is displayed on a new line and has associated an action to it that will result in another message displayed to the user.
 
-Let's follow on the example and say that user will choose to reply to ONEm Platform with a message containing ```D``` letter. This translates in choosing to access section D, available services and the Platform's response will be a list of available service categories. Notice the header changed and the hints in the footer.
+Let's follow on the example and say that user will choose to reply to ONEm Platform with a message containing ```D``` letter. This translates in choosing to access section D, available services and the Platform's response will be a list of available service categories. Notice the header changed and so did the hints in the footer.
 ```
 #ONEM SERVICES
 A Search
@@ -62,8 +62,17 @@ F Social
 --Reply option/"#"
 ```
 
+Let's get back to message body. The amount of information displayed to the user, along with header and footer, can exceed the sms size. In this case, the ONEm platform will split body information in several messages called chunks, adding a paging system that allows users to access more than can fit one single SMS. At the end of each sms body, right before the footer, there will be automatically added information about current chunk and total number of chunks in which the message was split. This mechanism applies both to simple text, like a news article, and options lists that are too long to be displayed in one message.
+The best example for this mechanism can be extracted from our #reuters application:
+```
+chunk examples
+```
+Another important topic to talk about regards capturing user input. Any webpage or web application will present users with a form to complete and submit. This is rather difficult in the SMS version of ONEm applications, but getting help from wizards, forms are completed step by step, each form field translates in a new message asking user for a free response or choose from a list of options. When all information is gathered, the user can review and submit the form through a supplementary confirmation step. No worries, we dedicated an entire section to forms and how you can create one [here][
+<!-- Link to Building section, Forms  -->
+]
 
-<!-- TO EXPLAIN: OUTLINE, CHUNKING, FORMS -->
+To see all these concepts at work, with real ONEm examples, and much more you can watch this Platform Demo
+<!-- video here about services and how they work -->
 
 
 # What are ONEm apps?
